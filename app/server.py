@@ -8,11 +8,43 @@ from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
+# https://www.dropbox.com/s/ikhbv5etjvvshul/trained_model.pkl?dl=0
+# export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = '# https://www.dropbox.com/s/ikhbv5etjvvshul/trained_model.pkl?dl=0
+'
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_name = 'trained_model.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+# 
+
+# classes = ['black', 'grizzly', 'teddys']
+classes = [
+    'Indian Rock Python',
+
+'Monocled Cobra',
+
+'Common Trinket',
+
+'Green Tree Vine',
+
+'Common Krait',
+
+'King Cobra',
+
+'Checkered Keelback',
+
+'Banded Racer',
+
+'Common Rat Snake',
+
+'Common Sand Boa',
+
+'Spectacled Cobra',
+
+'Saw-scaled Viper',
+
+'Russells Viper',
+]
 path = Path(__file__).parent
 
 app = Starlette()
